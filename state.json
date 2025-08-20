@@ -1,0 +1,139 @@
+{
+  "last_run_at": "2025-08-20T00:50:42",
+  "gateway_ip": "192.168.1.1",
+  "gateway_mac": "48:5d:36:87:80:07",
+  "ip_to_mac": {
+    "192.168.1.1": "48:5d:36:87:80:07",
+    "192.168.1.31": "2c:4d:54:ea:25:ad",
+    "192.168.1.151": "3c:e1:a1:20:26:0c",
+    "192.168.1.28": "02:0f:b5:36:22:93",
+    "192.168.1.197": "04:f4:d8:60:06:8f",
+    "192.168.1.164": "48:e7:da:92:e8:d7"
+  },
+  "devices": {
+    "48:5d:36:87:80:07": {
+      "mac": "48:5d:36:87:80:07",
+      "ips": [
+        "192.168.1.1"
+      ],
+      "hostname": null,
+      "open_ports": [],
+      "os_guess": "Linux 3.2 - 3.16",
+      "first_seen": "2025-08-19T00:27:16",
+      "last_seen": "2025-08-20T00:50:42",
+      "missed_runs": 0
+    },
+    "2c:4d:54:ea:25:ad": {
+      "mac": "2c:4d:54:ea:25:ad",
+      "ips": [
+        "192.168.1.31"
+      ],
+      "hostname": "DESKTOP-0CIELO4.fios-router.home",
+      "open_ports": [
+        135,
+        139,
+        445
+      ],
+      "os_guess": "Microsoft Windows 10 1809 - 21H2",
+      "first_seen": "2025-08-19T00:27:16",
+      "last_seen": "2025-08-20T00:50:42",
+      "missed_runs": 0
+    },
+    "3c:e1:a1:20:26:0c": {
+      "mac": "3c:e1:a1:20:26:0c",
+      "ips": [
+        "192.168.1.151"
+      ],
+      "hostname": null,
+      "open_ports": [],
+      "os_guess": null,
+      "first_seen": "2025-08-19T00:27:16",
+      "last_seen": "2025-08-20T00:50:42",
+      "missed_runs": 0
+    },
+    "02:0f:b5:36:22:93": {
+      "mac": "02:0f:b5:36:22:93",
+      "ips": [
+        "192.168.1.28"
+      ],
+      "hostname": null,
+      "open_ports": [],
+      "os_guess": "Linux 2.6.17 - 2.6.36",
+      "first_seen": "2025-08-19T00:27:16",
+      "last_seen": "2025-08-20T00:50:42",
+      "missed_runs": 0
+    },
+    "04:f4:d8:60:06:8f": {
+      "mac": "04:f4:d8:60:06:8f",
+      "ips": [
+        "192.168.1.197"
+      ],
+      "hostname": null,
+      "open_ports": [],
+      "os_guess": "Google Chromecast with Google TV (Android 10, Linux 4.9)",
+      "first_seen": "2025-08-19T00:27:16",
+      "last_seen": "2025-08-20T00:50:42",
+      "missed_runs": 0
+    },
+    "48:e7:da:92:e8:d7": {
+      "mac": "48:e7:da:92:e8:d7",
+      "ips": [
+        "192.168.1.164"
+      ],
+      "hostname": null,
+      "open_ports": [],
+      "os_guess": null,
+      "first_seen": "2025-08-20T00:50:42",
+      "last_seen": "2025-08-20T00:50:42",
+      "missed_runs": 0
+    },
+    "02:0f:b5:2e:35:fe": {
+      "mac": "02:0f:b5:2e:35:fe",
+      "ips": [
+        "192.168.1.21"
+      ],
+      "hostname": null,
+      "open_ports": [],
+      "os_guess": "Android 9 - 10 (Linux 4.9 - 4.14)",
+      "first_seen": "2025-08-19T00:27:16",
+      "last_seen": "2025-08-19T04:57:17",
+      "missed_runs": 2
+    },
+    "56:3a:7a:88:dc:2a": {
+      "mac": "56:3a:7a:88:dc:2a",
+      "ips": [
+        "192.168.1.180"
+      ],
+      "hostname": null,
+      "open_ports": [],
+      "os_guess": null,
+      "first_seen": "2025-08-19T04:57:17",
+      "last_seen": "2025-08-19T04:57:17",
+      "missed_runs": 2
+    },
+    "aa:8d:b3:54:f2:25": {
+      "mac": "aa:8d:b3:54:f2:25",
+      "ips": [
+        "192.168.1.161"
+      ],
+      "hostname": null,
+      "open_ports": [],
+      "os_guess": null,
+      "first_seen": "2025-08-19T00:27:16",
+      "last_seen": "2025-08-19T00:46:06",
+      "missed_runs": 6
+    },
+    "64:cc:22:2c:d6:66": {
+      "mac": "64:cc:22:2c:d6:66",
+      "ips": [
+        "192.168.1.242"
+      ],
+      "hostname": null,
+      "open_ports": [],
+      "os_guess": null,
+      "first_seen": "2025-08-19T00:27:16",
+      "last_seen": "2025-08-19T00:46:06",
+      "missed_runs": 6
+    }
+  }
+}
