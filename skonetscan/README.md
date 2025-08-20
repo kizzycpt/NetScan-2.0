@@ -1,86 +1,107 @@
-# Sko_NetScan 🔍
+Sko_NetScan 2.0 🔍
 
 Created By Samuel Quarm
-A fast, multi-threaded network scanner built in Python. It identifies devices on your local network, scans for open ports with protocol labels, performs OS fingerprinting via Nmap, and summarizes the results — all while saving logs to an organized folder.
+A fast, multi-threaded network scanner & IDS (Intrusion Detection System) built in Python. It discovers devices on your local network, scans for open ports, performs OS fingerprinting via Nmap, and maintains an inventory with change detection. Results are saved into organized logs and reports.
 
----
+📌 Features
 
-## 📌 Features
+✅ Interactive menu with two modes:
 
-- ✅ ARP scan to detect active devices on a subnet  
-- ✅ TCP port scanning with protocol name display (e.g., HTTPS, FTP)  
-- ✅ OS detection using Nmap  
-- ✅ Summary report showing:
-  - Total hosts found
-  - Subnet scanned
-  - Local and public IP addresses  
-- ✅ Auto-saves results in `Sko_NetScan/logs/scan_log.txt`
+Scan Mode → One-time ARP/TCP/OS scan with live results
 
----
+IDS Mode → Continuous monitoring with baselines, alerts, and reports
 
-## 🛠️ Requirements
+✅ ARP scan to detect active devices on a subnet
 
-Install the dependencies using:
+✅ TCP port scanning with protocol labels (HTTPS, FTP, SMB, etc.)
 
-```bash
+✅ Optional OS detection using Nmap
+
+✅ Inventory tracking of devices across runs
+
+✅ Alerts system for:
+
+New devices
+
+Port changes (opened/closed)
+
+OS changes
+
+Gateway MAC changes
+
+Offline devices
+
+IP/MAC mismatches
+
+✅ Formatted Rich tables for clean console output
+
+✅ Reports generated automatically:
+
+devices.csv → Device inventory
+
+report.md → Human-readable summary
+
+alerts.log → Alerts across runs
+
+scan_log.txt → Console logs
+
+🛠️ Requirements
+
+Install dependencies with:
+
 pip install -r requirements.txt
-```
 
----
+🚀 Usage
 
-## 🚀 Usage
+Run the script directly:
 
-To run the scanner:
+python skonetscan.py
 
-```bash
-python scanner.py -s <subnet>
-```
 
-Example:
+You will be prompted with options:
 
-```bash
-python scanner.py -s 192.168.1.0/24
-```
+IDS Mode (baseline + alerts, scheduled loop)
 
-If no `-s` (subnet) is provided, it defaults to `192.168.1.0/24`.
+Scan Mode (one-time snapshot)
 
----
+Exit
 
-## 📁 Output
+Command-Line Options
 
-All scan results are saved in:
+Run IDS once:
 
-```
-Sko_NetScan/logs/scan_log.txt
-```
+python skonetscan.py --ids-once
 
----
 
-## 🧪 Example Output
+Run IDS every N hours:
 
-```
-Port 22 (SSH): OPEN
-Port 80 (HTTP): CLOSED/FILTERED
-Port 443 (HTTPS): OPEN
+python skonetscan.py --ids-every 6
 
-========= SCAN SUMMARY =========
-Total Hosts Found: 4
-Subnet Scanned: 192.168.1.0/24
-Local IP: 192.168.1.15
-Public IP: 8.23.5.88
-================================
-```
+📁 Output Locations
 
----
+Logs → logs/scan_log.txt
 
-## ⚠️ Disclaimer
+Reports → logs/reports/
 
-This tool is for **educational and authorized use only**.  
-Do **NOT** scan networks that you do not own or lack permission to analyze.  
+devices.csv
+
+report.md
+
+Alerts → logs/alerts.log
+
+Baseline state → state.json
+
+🧪 Example Alerts
+2025-08-20T00:50:42 HIGH NEW_DEVICE mac=48:e7:da:92:e8:d7 ips=['192.168.1.164'] ports=[]
+2025-08-20T00:50:42 MEDIUM OFFLINE mac=aa:8d:b3:54:f2:25 last_seen=2025-08-19T00:46:06 missed_runs=6
+2025-08-20T00:50:42 HIGH PORT_OPENED mac=2c:4d:54:ea:25:ad ips=['192.168.1.31'] opened=[445]
+
+⚠️ Disclaimer
+
+This tool is for educational and authorized use only.
+Do NOT scan networks that you do not own or lack permission to analyze.
 Use responsibly.
 
----
-
-## 📄 License
+📄 License
 
 MIT License
