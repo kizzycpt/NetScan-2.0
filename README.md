@@ -1,4 +1,4 @@
-SKO Net Scan 2.0 🔍
+SKO Net Scan 2.0 🔍 
 
 Created by Samuel Quarm
 ⚡ A fast, multi-threaded Network Scanner & Intrusion Detection System (IDS) written in Python.
