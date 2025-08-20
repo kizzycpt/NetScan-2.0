@@ -1,6 +1,8 @@
 Sko_NetScan 2.0 🔍
 
-Created By Samuel Quarm
+Created By Samuel Quarm.
+
+
 A fast, multi-threaded network scanner & IDS (Intrusion Detection System) built in Python. It discovers devices on your local network, scans for open ports, performs OS fingerprinting via Nmap, and maintains an inventory with change detection. Results are saved into organized logs and reports.
 
 📌 Features
