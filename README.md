@@ -75,9 +75,9 @@ Run IDS once:
 python skonetscan.py --ids-once
 
 
-Run IDS every N hours:
+Run IDS every N Minutes:
 
-python skonetscan.py --ids-every 6
+python skonetscan.py --ids-every 5
 
 📂 Output
 
