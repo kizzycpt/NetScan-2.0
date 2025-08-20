@@ -1,5 +1,0 @@
-2025-08-20T00:50:42 HIGH NEW_DEVICE mac=48:e7:da:92:e8:d7 ips=['192.168.1.164'] ports=[]
-2025-08-20T00:50:42 INFO OFFLINE mac=02:0f:b5:2e:35:fe last_seen=2025-08-19T04:57:17 missed_runs=1
-2025-08-20T00:50:42 INFO OFFLINE mac=56:3a:7a:88:dc:2a last_seen=2025-08-19T04:57:17 missed_runs=1
-2025-08-20T00:50:42 MEDIUM OFFLINE mac=aa:8d:b3:54:f2:25 last_seen=2025-08-19T00:46:06 missed_runs=5
-2025-08-20T00:50:42 MEDIUM OFFLINE mac=64:cc:22:2c:d6:66 last_seen=2025-08-19T00:46:06 missed_runs=5

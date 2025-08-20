@@ -1,4 +1,0 @@
-scapy
-requests
-netifaces
-python-nmap
